@@ -1,0 +1,119 @@
+:root {
+  --DesFond: 'Saira';
+  --textFont: 'Roboto'
+}
+
+.wrap{
+    display: flex;
+}
+
+.components{
+    display: flex;
+}
+
+.menuBar{
+    width: 350px;
+    height: 100vh;
+    background-color: #1f1f1f;
+    border-right: 3px solid #464646;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    color: #fff;
+}
+
+
+.menuBarLogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.menuBarLogo div{
+    position: relative;
+    font-family: var(--DesFond);
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.menuBarLogo div span{
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(255, 72, 0);
+}
+
+.menuBarLogo div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: none;
+    border-right: 5px solid rgb(255, 72, 0);
+    border-top: 5px solid rgb(255, 72, 0);
+    position: absolute;
+    top: -5px;
+    right: -22px;
+}
+
+.menuBarLogo div::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: none;
+    border-bottom: 5px solid rgb(255, 72, 0);
+    border-left: 5px solid rgb(255, 72, 0);
+    position: absolute;
+    bottom: -2px;
+    left: -15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 15px;
+    
+}
+
+.navbar p{
+    font-family: var(--textFont);
+    font-weight: 900;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.link{
+    width: 120px;
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #464646;
+    transition: 0.3s;
+}
+
+.link:hover{
+    transform: translateX(20px);
+}
+
+.link.active{
+     transform: translateX(50px);
+}
+
+.link.active p,
+.link.active svg {
+  color: rgb(255, 72, 0);
+  
+}
+
+
+.link svg{
+    transition: 0.5s;
+    background: none;
+    color: #fff;
+}
