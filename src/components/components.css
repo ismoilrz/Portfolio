@@ -111,9 +111,84 @@
   
 }
 
+.colors{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 10px 0 0;
+}
+
+.sun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.sun:hover{
+    transform: rotate(360deg);
+}
+
+.setting:hover{
+    transform: rotate(360deg);
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    transition: 1.5s;
+}
 
 .link svg{
     transition: 0.5s;
     background: none;
     color: #fff;
 }
+
+/* .colors{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 10px 0 0;
+}
+
+.sun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.sun:hover{
+    transform: rotate(360deg);
+}
+
+.setting:hover{
+    transform: rotate(360deg);
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    transition: 1.5s;
+} */

@@ -1,17 +1,8 @@
-import sun from "../../assets/sun.svg"; 
-import setting from "../../assets/setting.svg";
+
 import "./homee.css"
 
 const HomePage = () => {
     return <>
-                <div className="colors">
-                    <div className="sun">
-                        <img src={sun} alt="" />
-                    </div>
-                    <div className="setting">
-                        <img src={setting} alt="" />
-                    </div>
-                </div>
                 <section className="info">
                     <div className="IamInfo">
                         <h2>Hello, my name is <span className="myName">Ro'zmetov Ismoil</span></h2>
@@ -24,7 +15,7 @@ const HomePage = () => {
                        <button>More About Me</button>
                     </div>
                     <div className="pick">
-                        <img src="https://i.pinimg.com/originals/01/7a/34/017a34f775c4e1e6b3651e6e554b382c.jpg" alt="" />
+                        <img src="https://avatars.mds.yandex.net/i?id=4afe21048edad5ccc8f53ba367d7742a_l-9242319-images-thumbs&n=13" alt="" />
                     </div>
                 </section>
            </>
