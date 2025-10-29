@@ -1,4 +1,5 @@
 
+import Contacts from "../../components/contacts";
 import "./homee.css"
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
                         <img src="https://avatars.mds.yandex.net/i?id=4afe21048edad5ccc8f53ba367d7742a_l-9242319-images-thumbs&n=13" alt="" />
                     </div>
                 </section>
+                <Contacts />
            </>
 }
 
