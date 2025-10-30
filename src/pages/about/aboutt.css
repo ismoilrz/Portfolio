@@ -1,3 +1,8 @@
+:root {
+  --DesFond: 'Saira';
+  --textFont: 'Roboto'
+}
+
 .about h1{
     position: relative;
     font-family: var(--DesFond);
@@ -26,4 +31,89 @@
     position: absolute;
     bottom: -8px;
     left: 0;
+}
+
+.aboutInfo{
+    margin: 50px 0 0 30px;
+}
+
+.aboutInfo h3{
+    font-size: 22px;
+    font-weight: 900;
+    font-family: var(--textFont);
+    
+}
+
+.aboutInfo span{
+    font-weight: 700;
+    font-family: var(--DesFond);
+    color: rgb(255, 72, 0);
+}
+
+.aboutInfo p{
+    margin-top: 12px;
+    max-width: 1000px;
+    line-height: 22px;
+    color: #a2a2a2;
+    font-family: var(--textFont);
+}
+
+.skillsInfo{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.skills{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.skillsInfoMain p{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    font-family: var(--DesFond);
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid #464646;
+}
+
+.skillsInfoMain span{
+    margin-left: 10px;
+    font-family: var(--textFont);
+    font-weight: 500;
+    color: #a2a2a2;
+}
+
+.skillsRepo{
+    margin-top: -30px;
+}
+
+.ProgresTitle{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--DesFond);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+progress{
+    width: 400px;
+    height: 13px;
+    -webkit-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 50px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, rgb(255, 72, 0), #ffc145);
+  border-radius: 50px;
 }
