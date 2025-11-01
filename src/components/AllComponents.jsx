@@ -16,7 +16,7 @@ const AllComponents = () => {
                         <MenuBar />
                     </div>
                    
-                    <section className="content">
+                     <section className="content">
                         <div className="fonSettings">
                             <FonSetting />
                         </div>

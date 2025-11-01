@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./aboutt.css"
+import Contacts from "../../components/contacts";
 
 const AboutPage = () => {
     const birthday = "3 july 2006";
@@ -28,7 +30,8 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <div className="skills">
-                        <div className="skillsInfo">
+                       <div className="skillsInfoDes">
+                          <div className="skillsInfo">
                             <div className="skillsInfoMain">
                                 <p>Birthday: <span>{birthday}</span></p>
                                 <p>Country: <span>{country}</span></p>
@@ -40,29 +43,36 @@ const AboutPage = () => {
                                  <p>Phone: <span>{phoneNum}</span></p>
                             </div>
                         </div>
+                            <div className="skillsBtns">
+                              <a href="/CV.pdf" download><button className="cvBtn">Download CV</button></a>
+                              <Link to={"/"}><button className="pageBtn">Home</button></Link>
+                              <Link to={"/portfolio"}><button className="pageBtn">Portfolio</button></Link>
+                            </div>
+                       </div>
                         <div className="skillsRepo">
-                               <div class="ProgresTitle">
+                               <div className="ProgresTitle">
                                     <span>HTML</span>
                                     <span>95%</span>
                                </div>
                                     <progress value="95" max="100"></progress>
-                               <div class="ProgresTitle">
+                               <div className="ProgresTitle">
                                     <span>CSS</span>
                                     <span>80%</span>
                                </div>
                                     <progress value="80" max="100"></progress>
-                               <div class="ProgresTitle">
+                               <div className="ProgresTitle">
                                     <span>JavaScript</span>
                                     <span>60%</span>
                                </div>
                                     <progress value="60" max="100"></progress>
-                               <div class="ProgresTitle">
+                               <div className="ProgresTitle">
                                     <span>React</span>
                                     <span>45%</span>
                                </div>
                                     <progress value="45" max="100"></progress>
                         </div>
                     </div>
+                    <Contacts />
                 </section>
            </>
 }
