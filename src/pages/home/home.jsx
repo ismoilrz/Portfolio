@@ -1,4 +1,4 @@
-
+import ReactCompareImage from "react-compare-image";
 import { Link } from "react-router-dom";
 import Contacts from "../../components/contacts";
 import "./homee.css"
@@ -16,9 +16,51 @@ const HomePage = () => {
                        </p>
                        <Link to="/about"><button>More About Me</button></Link>
                     </div>
-                    <div className="pick">
-                        <img src="https://avatars.mds.yandex.net/i?id=4afe21048edad5ccc8f53ba367d7742a_l-9242319-images-thumbs&n=13" alt="" />
-                    </div>
+                    {/* <div className="pick"> */}
+                        
+                         <div className="dis flex justify-center items-center h-screen bg-black">
+                            <div className="compare-container rounded-xl overflow-hidden shadow-xl">
+                                <ReactCompareImage
+                                leftImage="https://i.ytimg.com/vi/9DftXJozAgo/maxresdefault.jpg"
+                                rightImage="https://strategyjournal.ru/wp-content/uploads/2023/12/belyj-haker.jpg"
+                                sliderLineColor="black"
+                                handle={
+  <div
+    style={{
+      width: "2px",
+      height: "500px", 
+      background: "red",
+      position: "relative",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    }}
+  >
+    <button
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        whiteSpace: "nowrap",
+        color: "red",
+        width: "120px",
+        height: "40px",
+        borderRadius: "50px",
+        backgroundColor: "#fff7",
+        border: "none",
+        cursor: "grab",
+      }}
+    >
+      ◀ ▶
+    </button>
+  </div>
+}
+
+                                />
+                            </div>
+                            </div>
+                        
+                    {/* </div> */}
                 </section>
                 <Contacts />
            </>
