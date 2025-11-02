@@ -1,7 +1,8 @@
 import rentcar from "../assets/rentcarPics.jpg"
 import realityGaming from "../assets/RealityGamingpics.jpg"
 import sl from "../assets/SLPics.jpg"
-
+import ALlCars from "../assets/allcars.jpg"
+ 
 export const Projects = [
     {
         key: 1,
@@ -17,5 +18,10 @@ export const Projects = [
         key: 3,
         path: "https://sl-sand.vercel.app",
         img: sl,
+    },
+    {
+        key: 4,
+        path: "https://all-cars.vercel.app",
+        img: ALlCars,
     },
 ]

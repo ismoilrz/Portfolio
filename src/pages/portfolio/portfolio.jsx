@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Projects } from "../../constants/projecktData";
 import "./portfolioo.css"
 
@@ -6,7 +7,10 @@ const PortfolioPage = () => {
                 <section className="portfolio">
                     <h1>Portfolio</h1>
                     <div className="project">
-                        <p>Some of my projects:</p>
+                        <div className="projectsTop">
+                            <p>Some of my projects:</p>
+                            <Link to={"/contact"}><button>Contact</button></Link>
+                        </div>
                         <div className="projects">
                             {Projects.map((item, index) => (
                                 <a
@@ -14,10 +18,9 @@ const PortfolioPage = () => {
                                  href={item.path}
                                  className="projectLink"
                                  target="_blank"
-                                 rel="noopener noreferrer" >
-                                    
+                                 rel="noopener noreferrer" >      
                                     <div className="projectImg">
-                                        <img src={item.img} alt="" />
+                                        <img src={item.img} alt="ProjectImg" />
                                     </div>
                                 </a>
                             ))}
