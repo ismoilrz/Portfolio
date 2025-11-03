@@ -16,7 +16,6 @@ const HomePage = () => {
                        </p>
                        <Link to="/about"><button>More About Me</button></Link>
                     </div>
-                    {/* <div className="pick"> */}
                         
                          <div className="dis flex justify-center items-center h-screen bg-black">
                             <div className="compare-container rounded-xl overflow-hidden shadow-xl">
@@ -25,42 +24,41 @@ const HomePage = () => {
                                 rightImage="https://strategyjournal.ru/wp-content/uploads/2023/12/belyj-haker.jpg"
                                 sliderLineColor="black"
                                 handle={
-  <div
-    style={{
-      width: "2px",
-      height: "500px", 
-      background: "red",
-      position: "relative",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
-    }}
-  >
-    <button
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        whiteSpace: "nowrap",
-        color: "red",
-        width: "120px",
-        height: "40px",
-        borderRadius: "50px",
-        backgroundColor: "#fff7",
-        border: "none",
-        cursor: "grab",
-      }}
-    >
-      ◀ ▶
-    </button>
-  </div>
-}
+                                    <div
+                                      style={{
+                                        width: "2px",
+                                        height: "500px", 
+                                        background: "red",
+                                        position: "relative",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center"
+                                      }}
+                                    >
+                                      <button
+                                        style={{
+                                          display: "flex",
+                                          alignItems: "center",
+                                          justifyContent: "center",
+                                          whiteSpace: "nowrap",
+                                          color: "red",
+                                          width: "120px",
+                                          height: "40px",
+                                          borderRadius: "50px",
+                                          backgroundColor: "#fff7",
+                                          border: "none",
+                                          cursor: "grab",
+                                        }}
+                                      >
+                                        ◀ ▶
+                                      </button>
+                                    </div>
+                                  }
 
                                 />
                             </div>
                             </div>
                         
-                    {/* </div> */}
                 </section>
                 <Contacts />
            </>
