@@ -1,5 +1,5 @@
 import rentcar from "../assets/rentcarPics.jpg"
-import realityGaming from "../assets/RealityGamingpics.jpg"
+import realityGaming from "../assets/RealityGamingPics.jpg"
 import sl from "../assets/SLPics.jpg"
 import ALlCars from "../assets/allcars.jpg"
  
