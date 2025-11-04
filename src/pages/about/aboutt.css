@@ -38,9 +38,10 @@
 }
 
 .aboutInfo h3{
+    font-family: var(--textFont);
+    color: #fff;
     font-size: 22px;
     font-weight: 900;
-    font-family: var(--textFont);
     
 }
 
@@ -109,6 +110,7 @@
     font-family: var(--DesFond);
     font-size: 15px;
     font-weight: 600;
+    color: #fff;
     margin-top: 20px;
 }
 

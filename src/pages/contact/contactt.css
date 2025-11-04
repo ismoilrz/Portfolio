@@ -3,7 +3,7 @@
   --textFont: 'Roboto'
 }
 
-.contact h1{
+.contactPage h1{
     position: relative;
     font-family: var(--DesFond);
     color: #fff;
@@ -12,7 +12,7 @@
     margin-left: 30px;
 }
 
-.contact h1::after{
+.contactPage h1::after{
     content: "";
     width: 60px;
     height: 3px;
@@ -22,7 +22,7 @@
     bottom: 0;
     left: 0;
 }
-.contact h1::before{
+.contactPage h1::before{
      content: "";
     width: 30px;
     height: 3px;
@@ -31,4 +31,64 @@
     position: absolute;
     bottom: -8px;
     left: 0;
+}
+
+.contactMe{
+    text-align: center;
+}
+
+.contactMe h3{
+    font-family: var(--DesFond);
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(255, 72, 0);
+    padding-block: 60px 10px;
+}
+
+.contactMe p{
+    font-family: var(--DesFond);
+    font-weight: 800;
+    color: #fff;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.platform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 130px;
+
+    transition: 0.1s ease-out;
+}
+
+.platform h5{
+    font-family: var(--DesFond);
+    font-size: 18px;
+    color: #fff;
+    padding-block: 8px;
+}
+
+.platform p{
+    font-family: var(--textFont);
+    font-size: 15px;
+    font-weight: 500;
+    color: #c1c1c1;
+}
+
+.platform:hover{
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+
+.platform:active{
+    box-shadow: 1px 1px 1px 1px #000;
 }

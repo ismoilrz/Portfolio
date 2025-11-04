@@ -1,6 +1,3 @@
-
-
-
 import MenuBar from "./menuBar"
 
 import "./components.css"
