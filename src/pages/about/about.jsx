@@ -1,3 +1,12 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination } from "swiper/modules";
+
+// Swiper CSS
+import "swiper/css";
+import "swiper/css/pagination";
+// import "./styles.css";
+
 import { Link } from "react-router-dom";
 import "./aboutt.css"
 import Contacts from "../../components/contacts";
@@ -44,9 +53,30 @@ const AboutPage = () => {
                             </div>
                         </div>
                             <div className="skillsBtns">
-                              <a href="/CV.pdf" download><button className="cvBtn">Download CV</button></a>
-                              <Link to={"/"}><button className="pageBtn">Home</button></Link>
+                              
+
+                               <Swiper
+                                   direction="vertical"
+                                   slidesPerView={1}
+                                   spaceBetween={30}
+                                   mousewheel
+                                   pagination={{ clickable: true }}
+                                   modules={[Mousewheel, Pagination]}
+                                   className="mySwiper"
+                              >
+                                   <SwiperSlide><a href="/CV.pdf" download><button className="cvBtn">Download CV 1 </button></a> </SwiperSlide>
+                                   <SwiperSlide><a href="/Ismoil_Rozmetov_CV.pdf" download><button className="cvBtn">Download CV 2</button></a> </SwiperSlide>
+                              </Swiper>
+
+                              <div className="btnView">
+                                   <p>CV 2</p>
+                                   <p>⇓</p>
+                              </div>
+
+                             <div className="menuBtns">
+                               <Link to={"/"}><button className="pageBtn">Home</button></Link>
                               <Link to={"/portfolio"}><button className="pageBtn">Portfolio</button></Link>
+                             </div>
                             </div>
                        </div>
                         <div className="skillsRepo">

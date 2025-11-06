@@ -86,9 +86,78 @@
 }
 
 .platform:hover{
+    border-bottom: 10px solid rgb(255, 72, 0);
     box-shadow: 4px 4px 4px 4px #000000;
 }
 
 .platform:active{
     box-shadow: 1px 1px 1px 1px #000;
+    border-bottom: 3px solid rgb(255, 72, 0);
+}
+
+.massage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.massage h3{
+    font-family: var(--DesFond);
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(255, 72, 0);
+    margin-top: 40px;
+}
+
+.massageInputs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.massageInputs input:nth-child(1){
+    width: 46.5%;
+}
+.massageInputs input:nth-child(2){
+    width: 46.5%;
+}
+
+.massageInputs input:nth-child(4){
+    padding-bottom: 120px;
+
+    height: 170px;
+    border-radius: 30px;
+}
+
+.massageInputs input{
+    outline: none;
+    width: 95%;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #3a3a3a;
+    background: #1f1f1f;
+    padding-left: 20px;
+
+    color: #FFF;
+    font-family: var(--textFont);
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.2s ;
+}
+
+.massageInputs input:focus{
+    border: 2px solid rgb(255, 72, 0);
+  box-shadow: 0 0 10px rgb(255, 72, 0);
+  
+}
+
+
+.massageInputs input::placeholder{
+    color: rgb(255, 72, 0);
+    font-weight: 500;
+    font-family: var(--DesFond);
 }

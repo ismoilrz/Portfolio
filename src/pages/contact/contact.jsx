@@ -5,7 +5,7 @@ const ContactPage = () => {
     return <>
                 <section className="contactPage">
                     <h1>Contact Me</h1>
-                    <div className="contactMe">
+                     <div className="contactMe">
                         <h3>Have You Any Question ?</h3>
                         <p>I'M AT YOUR SERVICE</p>
                         <div className="contact">
@@ -19,7 +19,18 @@ const ContactPage = () => {
                                 </a>
                             ))}
                         </div>
+                    </div> 
+
+                    <div className="massage">
+                        <h3>SEND MEN AN MASSAGE</h3>
+                        <div className="massageInputs">
+                            <input type="text" placeholder="Name" />
+                            <input type="number" placeholder="Phone" />
+                            <input type="text" placeholder="Email" />
+                            <input type="text" placeholder="Massage" />
+                        </div>
                     </div>
+
                 </section>
            </>
 }
