@@ -127,24 +127,26 @@
     width: 40px;
     height: 40px;
     background-color: #2a2a2a;
+    box-shadow: 3px 3px 3px #666;
+    border: none;
     border-radius: 100px;
-    transition: 1.5s;
+    transition: 0.2s;
 }
 
 .sun:hover{
-    transform: rotate(360deg);
+    background-color: #444;
 }
 
 .sun:active{
-    border: none;
+    box-shadow: none;
 }
 
 .setting:hover{
-    transform: rotate(360deg);
+    background-color: #444;
 }
 
 .setting:active{
-    border: none;
+   box-shadow: none;
 }
 
 .setting{
@@ -154,8 +156,10 @@
     width: 40px;
     height: 40px;
     background-color: #2a2a2a;
+    box-shadow: 3px 3px 3px #666;
+    border: none;
     border-radius: 100px;
-    transition: 1.5s;
+    transition: 0.2s;
 }
 
 .link svg{
@@ -171,6 +175,7 @@
     width: 50px;
     height: 50px;
     background-color: #3c3c3c;
+    box-shadow: 3px 3px 3px #666;
     border-radius: 15px;
 
     transition: 0.2s ease-out;
@@ -178,6 +183,10 @@
 
 .socialsUrl:hover{
     transform: translateY(-15px);
+}
+
+.socialsUrl:active{
+    box-shadow: none;
 }
 
 .socials{
@@ -188,18 +197,30 @@
 
   /* <------------------------- light mode ------------------------> */
 
+/* light mode Menubar */
+
 .wrap.light .menuBar{ background-color: #eef8ff; border-right-color: #c1c1c1; }
-
 .wrap.light address{ color: #000; }
-
 .wrap.light .link{ border-bottom: 2px solid #c1c1c1; }
-
 .wrap.light .link.active p{ color: rgb(255, 72, 0); }
-
 .wrap.light .link p{ color: #000; }
-
 .wrap.light .link.active svg{ color: rgb(255, 72, 0); }
-
 .wrap.light .link svg{ color: #000; }
 
+/* light mode menubar edn */
+
+/* light mode content */
+
+/* home light */
+
 .wrap.light .content{ background-color: #e9efff; }
+.wrap.light .content h2{ color: #000; }
+.wrap.light .content p{ color: #666; }
+.wrap.light .content button:hover { color: #000; }
+.wrap.light .content .colors button { background-color: #777; box-shadow: 3px 3px 3px #222;}
+.wrap.light .content .colors button:hover { background-color: #999; }
+.wrap.light .content .colors button:active { background-color: #777; box-shadow: none;}
+.wrap.light .content .socialsUrl { background-color: #ffffff; box-shadow: 2px 2px 2px #222;}
+.wrap.light .content .socialsUrl:active{ box-shadow: none; }
+
+/* home light end */
