@@ -1,8 +1,11 @@
 import AllComponents from "../components/AllComponents"
+import { ThemeProvider } from "../context/themeContext";
 
 const App = () => {
     return <>
-                <AllComponents />
+                <ThemeProvider>
+                    <AllComponents />
+                </ThemeProvider>
            </>
 }
 

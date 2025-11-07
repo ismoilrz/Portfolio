@@ -29,8 +29,8 @@
 @keyframes Rgb{
     0%{}
     25%{background-color: #2a2a2a; border-color: rgb(255, 72, 0);}
-    50%{background-color: rgb(255, 72, 0); color: #fff; border-color: #fff;}
-    75%{background-color: #fff; color: #000000; border-color: rgb(255, 72, 0);}
+    50%{background-color: rgb(255, 72, 0); color: #f5f5f5; border-color: #f5f5f5;}
+    75%{background-color: #f5f5f5; color: #000000; border-color: rgb(255, 72, 0);}
     100%{background-color: #000; color: rgb(255, 72, 0);}
 }
 
@@ -131,7 +131,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    border: 1px solid rgb(255, 72, 0);
+    border: 2px solid rgb(255, 72, 0);
 
     animation: dis 6s linear infinite;
 }

@@ -18,6 +18,7 @@
     border-right: 3px solid #464646;
 }
 
+
 .content{
     width: 100%;
     height: 100vh;
@@ -134,8 +135,16 @@
     transform: rotate(360deg);
 }
 
+.sun:active{
+    border: none;
+}
+
 .setting:hover{
     transform: rotate(360deg);
+}
+
+.setting:active{
+    border: none;
 }
 
 .setting{
@@ -176,3 +185,21 @@
     gap: 10px;
     margin: 60px 0px 0px 40px;
 }
+
+  /* <------------------------- light mode ------------------------> */
+
+.wrap.light .menuBar{ background-color: #eef8ff; border-right-color: #c1c1c1; }
+
+.wrap.light address{ color: #000; }
+
+.wrap.light .link{ border-bottom: 2px solid #c1c1c1; }
+
+.wrap.light .link.active p{ color: rgb(255, 72, 0); }
+
+.wrap.light .link p{ color: #000; }
+
+.wrap.light .link.active svg{ color: rgb(255, 72, 0); }
+
+.wrap.light .link svg{ color: #000; }
+
+.wrap.light .content{ background-color: #e9efff; }

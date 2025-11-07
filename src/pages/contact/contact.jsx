@@ -30,6 +30,7 @@ const ContactPage = () => {
                             <input type="text" placeholder="Massage" />
                         </div>
                     </div>
+                        <button className="submit">Submit</button>
 
                 </section>
            </>

@@ -99,6 +99,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .massage h3{
@@ -108,6 +109,7 @@
     color: rgb(255, 72, 0);
     margin-top: 40px;
 }
+
 
 .massageInputs{
     width: 100%;
@@ -161,3 +163,29 @@
     font-weight: 500;
     font-family: var(--DesFond);
 }
+
+.submit{
+    width: 230px;
+    height: 50px;
+    margin-left: 30px;
+    margin-block: 30px 50px;
+    border-radius: 50px;
+    background: rgb(255, 72, 0);
+    border: 2px solid rgb(255, 72, 0);
+
+    font-family: var(--textFont);
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+
+    transition: 0.1s ease-out;
+}
+
+.submit:hover{
+    background: none;
+}
+
+.submit:active{
+    transform: scale(0.95);
+}
+

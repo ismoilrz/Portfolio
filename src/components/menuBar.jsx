@@ -3,7 +3,7 @@ import { MenuData } from "../constants/menuData"
 import "./components.css"
 
 const MenuBar = () => {
-    const location = useLocation()
+    const location = useLocation();
 
     return <>
                 <section className="menuBar">

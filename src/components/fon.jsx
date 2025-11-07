@@ -1,17 +1,21 @@
 import "./components.css"
 
 import sun from "../assets/sun.svg"; 
+import moon from "../assets/moon.svg"
 import setting from "../assets/setting.svg";
+import { useTheme } from "../context/themeContext";
 
 const FonSetting = () => {
+    const { theme, toggleTheme } = useTheme();
+
     return <>
                  <div className="colors">
-                    <div className="sun">
-                        <img src={sun} alt="" />
-                    </div>
-                    <div className="setting">
+                    <button className="sun" onClick={toggleTheme}>
+                        <img src={theme === "light" ? moon : sun} alt={theme === "light" ? "Dark" : "Light"} />
+                    </button>
+                    <button className="setting">
                         <img src={setting} alt="" />
-                    </div>
+                    </button>
                 </div> 
            </>
 }

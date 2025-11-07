@@ -5,10 +5,13 @@ import { Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
 import { routes } from "../constants/routes"
 import FonSetting from "./fon"
+import { useTheme } from "../context/themeContext"
 
 const AllComponents = () => {
+    const { theme } = useTheme();
+
     return <>
-                <div className="wrap">
+                <div className={`wrap ${theme}`}>
                     <div className="components">
                         <MenuBar />
                     </div>
