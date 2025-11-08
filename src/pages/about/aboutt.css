@@ -1,7 +1,15 @@
+                           /*--------------------------- create about page style--------------------- */
+
+/*------------- create root */
+
 :root {
   --DesFond: 'Saira';
   --textFont: 'Roboto'
 }
+
+/* end root */
+
+/*------------- about title */
 
 .about h1{
     position: relative;
@@ -33,6 +41,11 @@
     left: 0;
 }
 
+/* about title end */
+
+
+/*---------- text info */
+
 .aboutInfo{
     margin: 50px 0 0 30px;
 }
@@ -59,6 +72,11 @@
     font-family: var(--textFont);
     font-weight: 500;
 }
+
+/* text info end */
+
+
+/* -------------my dec info style */
 
 .skillsInfo{
     display: flex;
@@ -101,6 +119,10 @@
     color: #a2a2a2;
 }
 
+/* my dec info end */
+
+
+/*------------- my progress style */
 .skillsRepo{
     margin-top: -30px;
 }
@@ -132,12 +154,16 @@ progress::-webkit-progress-value {
   border-radius: 50px;
 }
 
+/* my progres end */
+
+/* -------------about btns */
 .skillsBtns{
     display: flex;
     gap: 20px;
     margin-top: 40px;
 }
 
+/* create slide btn style */
 .cvBtn{
     width: 200px;
     height: 45px;
@@ -162,6 +188,44 @@ progress::-webkit-progress-value {
 .cvBtn:active{
     transform: scale(0.9);
 }
+/*--------- swiper */
+.swiper-pagination{
+    margin-right: -7px;
+   
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: rgb(255, 72, 0);
+}
+
+.swiper {
+  margin-left: 30px;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+    margin-left: -25px;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* swiper end */
+
+/* slide btn style end */
+
+
+/*----------- menues btns start */
 
 .menuBtns{
     display: flex;
@@ -194,6 +258,8 @@ progress::-webkit-progress-value {
      transform: scale(0.9);
 }
 
+/* menues btns end */
+
 .btnView{
     display: flex;
     align-items: center;
@@ -215,34 +281,4 @@ progress::-webkit-progress-value {
     font-weight: 600;
 }
 
-.swiper-pagination{
-    margin-right: -7px;
-   
-}
-
-.swiper-pagination-bullet{
-    background-color: #fff;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: rgb(255, 72, 0);
-}
-
-.swiper {
-margin-left: 30px;
-  width: 220px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide {
-    margin-left: -25px;
-  font-size: 18px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 

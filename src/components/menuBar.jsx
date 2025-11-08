@@ -7,11 +7,11 @@ const MenuBar = () => {
 
     return <>
                 <section className="menuBar">
-                    <div className="menuBarLogo">
+                    <div className="menuBarLogo">   {/*logo */}
                         <div> <address>BAK<span>III</span></address></div>
                     </div>
 
-                    <div className="navbar">
+                    <div className="navbar">   {/*navbar */}
                         {MenuData.map((item) => (
                             <Link
                             key={item.key}

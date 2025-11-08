@@ -1,8 +1,10 @@
+// socials svg
 import insta from "../assets/instagram.svg";
 import teleg from "../assets/telelgram.svg";
 import num from "../assets/phone.svg";
 import git from "../assets/gitHub.svg";
 
+// socials url
 const instagram = "https://www.instagram.com/ismoil.rz?igsh=MWxseG0zanVkbWNrcw==";
 const telegram = "http://t.me/Ismoilrz";
 const gitHub = "https://github.com/ismoilrz";

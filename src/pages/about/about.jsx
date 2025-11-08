@@ -5,13 +5,14 @@ import { Mousewheel, Pagination } from "swiper/modules";
 // Swiper CSS
 import "swiper/css";
 import "swiper/css/pagination";
-// import "./styles.css";
+
 
 import { Link } from "react-router-dom";
 import "./aboutt.css"
 import Contacts from "../../components/contacts";
 
 const AboutPage = () => {
+     // my dec Info
     const birthday = "3 july 2006";
     const country = "Uzbekistan";
     const age = "19";
@@ -20,9 +21,12 @@ const AboutPage = () => {
     const phoneNum = "+998(94) 8536747"
 
     return <>
+    {/*ABOUT */}
                 <section className="about">
+                    {/*ABOUT title */}
                     <h1>About Me</h1>
 
+                    {/*about info */}
                     <div className="aboutInfo">
                         <h3>I'm Ro'zmetov Ismoil and <span className="myName">Fronted Developer</span></h3>
                         <p>
@@ -40,6 +44,7 @@ const AboutPage = () => {
                     </div>
                     <div className="skills">
                        <div className="skillsInfoDes">
+                         {/*my dec info */}
                           <div className="skillsInfo">
                             <div className="skillsInfoMain">
                                 <p>Birthday: <span>{birthday}</span></p>
@@ -52,9 +57,8 @@ const AboutPage = () => {
                                  <p>Phone: <span>{phoneNum}</span></p>
                             </div>
                         </div>
+                        {/*about btns */}
                             <div className="skillsBtns">
-                              
-
                                <Swiper
                                    direction="vertical"
                                    slidesPerView={1}
@@ -62,10 +66,18 @@ const AboutPage = () => {
                                    mousewheel
                                    pagination={{ clickable: true }}
                                    modules={[Mousewheel, Pagination]}
-                                   className="mySwiper"
-                              >
-                                   <SwiperSlide><a href="/CV.pdf" download><button className="cvBtn">Download CV 1 </button></a> </SwiperSlide>
-                                   <SwiperSlide><a href="/Ismoil_Rozmetov_CV.pdf" download><button className="cvBtn">Download CV 2</button></a> </SwiperSlide>
+                                   className="mySwiper">
+                                   <SwiperSlide>
+                                        <a href="/CV.pdf" download>
+                                             <button className="cvBtn">Download CV 1 </button>
+                                        </a>
+                                   </SwiperSlide>
+
+                                   <SwiperSlide>
+                                        <a href="/Ismoil_Rozmetov_CV.pdf" download>
+                                             <button className="cvBtn">Download CV 2</button>
+                                        </a> 
+                                   </SwiperSlide>
                               </Swiper>
 
                               <div className="btnView">
@@ -75,29 +87,26 @@ const AboutPage = () => {
 
                              <div className="menuBtns">
                                <Link to={"/"}><button className="pageBtn">Home</button></Link>
-                              <Link to={"/portfolio"}><button className="pageBtn">Portfolio</button></Link>
+                               <Link to={"/portfolio"}><button className="pageBtn">Portfolio</button></Link>
                              </div>
                             </div>
                        </div>
+                       {/*my progress */}
                         <div className="skillsRepo">
                                <div className="ProgresTitle">
-                                    <span>HTML</span>
-                                    <span>95%</span>
+                                    <span>HTML</span> <span>95%</span>
                                </div>
                                     <progress value="95" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>CSS</span>
-                                    <span>80%</span>
+                                    <span>CSS</span> <span>80%</span>
                                </div>
                                     <progress value="80" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>JavaScript</span>
-                                    <span>60%</span>
+                                    <span>JavaScript</span><span>60%</span>
                                </div>
                                     <progress value="60" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>React</span>
-                                    <span>45%</span>
+                                    <span>React</span><span>45%</span>
                                </div>
                                     <progress value="45" max="100"></progress>
                         </div>

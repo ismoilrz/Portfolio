@@ -1,5 +1,6 @@
 import MenuBar from "./menuBar"
 
+// components
 import "./components.css"
 import { Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
@@ -13,13 +14,16 @@ const AllComponents = () => {
     return <>
                 <div className={`wrap ${theme}`}>
                     <div className="components">
-                        <MenuBar />
+                        <MenuBar />         {/*menubar */}
                     </div>
                    
+                   {/* content */}
+
                      <section className="content">
                         <div className="fonSettings">
-                            <FonSetting />
+                            <FonSetting />       {/*fon */}
                         </div>
+                        {/* pages */}
                         <Suspense>
                             <Routes>
                                 {routes.map((item, index) => (
@@ -27,6 +31,8 @@ const AllComponents = () => {
                                 ))}
                             </Routes>
                         </Suspense>
+
+                        {/* content end */}
                     </section>
                 </div>
            </>

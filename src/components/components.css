@@ -1,7 +1,15 @@
+                   /* -------------------------------- create components------------------------------------- */
+
+/*------------- create root */
+
 :root {
   --DesFond: 'Saira';
   --textFont: 'Roboto'
 }
+
+/* root end */
+
+/* ---------------------create wrapa */
 
 .wrap{
     display: flex;
@@ -11,13 +19,7 @@
     display: flex;
 }
 
-.menuBar{
-    width: 350px;
-    height: 100vh;
-    background-color: #1f1f1f;
-    border-right: 3px solid #464646;
-}
-
+/* content */
 
 .content{
     width: 100%;
@@ -26,6 +28,19 @@
     overflow: auto;
 }
 
+/* content end */
+
+
+/* ------------------create menubar */
+
+.menuBar{
+    width: 350px;
+    height: 100vh;
+    background-color: #1f1f1f;
+    border-right: 3px solid #464646;
+}
+
+/* menubr logo start */
 
 .menuBarLogo{
     display: flex;
@@ -71,6 +86,11 @@
     left: -15px;
 }
 
+/* menubar logo end */
+
+
+/* navbar */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -111,6 +131,19 @@
   color: rgb(255, 72, 0);
   
 }
+
+.link svg{
+    transition: 0.5s;
+    background: none;
+    color: #fff;
+}
+
+/* navbar end */
+
+/* menubar end */
+
+
+/* create fon component style */
 
 .colors{
     display: flex;
@@ -162,10 +195,14 @@
     transition: 0.2s;
 }
 
-.link svg{
-    transition: 0.5s;
-    background: none;
-    color: #fff;
+/* fon component end */
+
+/* create contacts component style */
+
+.socials{
+    display: flex;
+    gap: 10px;
+    margin: 60px 0px 0px 40px;
 }
 
 .socialsUrl{
@@ -189,15 +226,12 @@
     box-shadow: none;
 }
 
-.socials{
-    display: flex;
-    gap: 10px;
-    margin: 60px 0px 0px 40px;
-}
+/* contacts component end */
 
-  /* <------------------------- light mode ------------------------> */
 
-/* light mode Menubar */
+                   /* <------------------------- light mode ------------------------> */
+
+/*--------------- light mode Menubar */
 
 .wrap.light .menuBar{ background-color: #eef8ff; border-right-color: #c1c1c1; }
 .wrap.light address{ color: #000; }
@@ -209,18 +243,69 @@
 
 /* light mode menubar edn */
 
-/* light mode content */
 
-/* home light */
+/*--------------- light mode content */
 
 .wrap.light .content{ background-color: #e9efff; }
+.wrap.light .content h1{ color: #000; }
 .wrap.light .content h2{ color: #000; }
+.wrap.light .content h3{ color: #000; }
+.wrap.light .content h5{ color: #000; }
 .wrap.light .content p{ color: #666; }
+.wrap.light .content input{ background-color: #eef8ff; border-color: #c1c1c1; color: #000;}
+.wrap.light .content input:focus{ background-color: #fff;}
 .wrap.light .content button:hover { color: #000; }
+
+/* light mode content end */
+
+
+/*-------------- light mode aboutPage */
+
+.wrap.light .content .about  .skillsInfo p{ color: #000; }
+.wrap.light .content .about .skillsInfo p:hover{ color: rgb(255, 72, 0); }
+.wrap.light .content .about .skillsInfo p:hover span{ color: #000; }
+.wrap.light .content .about .skillsInfo span{ color: #666; }
+.wrap.light .content .about .skillsInfoMain p { border-bottom-color: #c1c1c1;}
+.wrap.light .content .about .btnView p { color: #000; }
+.wrap.light .content .about .swiper-pagination-bullet { background-color: #000;}
+.wrap.light .content .about .swiper-pagination-bullet-active { background-color: rgb(255, 72, 0);}
+.wrap.light .content .about .ProgresTitle span { color: #000; }
+.wrap.light .content .about .skillsRepo progress::-webkit-progress-bar { background-color: #c1c1c1;}
+
+/* light mode AboutPage end */
+
+
+/*-------------- light mode PortfolioPage */
+
+.wrap.light .content .portfolio .projectImg { border-color: #c1c1c1;}
+.wrap.light .content .portfolio .projectImg:hover { border: 3px solid rgb(255, 72, 0);}
+
+/* light mode PortfolioPage end */
+
+
+/*-------------- light mode ContactPage */
+
+.wrap.light .content .contactPage h3 {color: rgb(255, 72, 0);}
+.wrap.light .content .contactPage .platform:hover {box-shadow: 4px 4px 4px 4px #888;}
+.wrap.light .content .contactPage .platform:active {box-shadow: 1px 1px 1px 1px #666;}
+
+/* light mode ContactPage end */
+
+
+/*-------------- light mode Fon component */
+
 .wrap.light .content .colors button { background-color: #777; box-shadow: 3px 3px 3px #222;}
 .wrap.light .content .colors button:hover { background-color: #999; }
 .wrap.light .content .colors button:active { background-color: #777; box-shadow: none;}
+
+/* light mode Fon component end */
+
+
+/*------------------ light mode Contacts component */
+
 .wrap.light .content .socialsUrl { background-color: #ffffff; box-shadow: 2px 2px 2px #222;}
 .wrap.light .content .socialsUrl:active{ box-shadow: none; }
 
-/* home light end */
+/* light mode contacts component end */
+
+/* wrap end */
