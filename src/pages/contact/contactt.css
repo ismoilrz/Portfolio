@@ -147,22 +147,6 @@
     transition: 0.2s ;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 90%;
-}
-
-::-webkit-scrollbar-track {
-  background: none;
-  border-radius: 10px;
- 
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(255, 72, 0);
-  border-radius: 10px;
-}
-
 .massageInputs textarea::placeholder{
     color: rgb(255, 72, 0);
 }

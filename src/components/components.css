@@ -1,9 +1,5 @@
                    /* -------------------------------- create components------------------------------------- */
 
-* {
-  transition: all 0.3s ease;
-}
-
 
 /*------------- create root */
 
@@ -13,6 +9,25 @@
 }
 
 /* root end */
+
+* {
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 90%;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 72, 0);
+  border-radius: 10px;
+}
 
 /* ---------------------create wrapa */
 
@@ -251,6 +266,7 @@
 
 /*--------------- light mode content */
 
+.wrap.light .content::-webkit-scrollbar-track {background-color: #999;}
 .wrap.light .content{ background-color: #e9efff; }
 .wrap.light .content h1{ color: #000; }
 .wrap.light .content h2{ color: #000; }
