@@ -27,7 +27,7 @@ const ContactPage = () => {
                             <input type="text" placeholder="Name" />
                             <input type="number" placeholder="Phone" />
                             <input type="text" placeholder="Email" />
-                            <input type="text" placeholder="Massage" />
+                           <textarea name="#" id="#" placeholder="Massage"></textarea>
                         </div>
                     </div>
                         <button className="submit">Submit</button>

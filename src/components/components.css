@@ -1,5 +1,10 @@
                    /* -------------------------------- create components------------------------------------- */
 
+* {
+  transition: all 0.3s ease;
+}
+
+
 /*------------- create root */
 
 :root {
@@ -255,6 +260,7 @@
 .wrap.light .content input{ background-color: #eef8ff; border-color: #c1c1c1; color: #000;}
 .wrap.light .content input:focus{ background-color: #fff;}
 .wrap.light .content button:hover { color: #000; }
+.wrap.light .content textarea{  background-color: #eef8ff; border-color: #c1c1c1; color: #000; } 
 
 /* light mode content end */
 

@@ -127,11 +127,49 @@
     width: 46.5%;
 }
 
-.massageInputs input:nth-child(4){
-    padding-bottom: 120px;
-    
+.massageInputs textarea{
+    padding: 15px;
+    width: 95%;
     height: 170px;
-    border-radius: 30px;
+    outline: none;
+    border-radius: 20px;
+     border: 3px solid #3a3a3a;
+    background: #1f1f1f;
+    resize: none;
+    overflow: auto;
+   
+
+    color: #FFF;
+    font-family: var(--textFont);
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.2s ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 90%;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 72, 0);
+  border-radius: 10px;
+}
+
+.massageInputs textarea::placeholder{
+    color: rgb(255, 72, 0);
+}
+
+.massageInputs textarea:focus{
+    border: 2px solid rgb(255, 72, 0);
+    box-shadow: 0 0 10px rgb(255, 72, 0);
 }
 
 .massageInputs input{
@@ -153,7 +191,7 @@
 
 .massageInputs input:focus{
     border: 2px solid rgb(255, 72, 0);
-  box-shadow: 0 0 10px rgb(255, 72, 0);
+    box-shadow: 0 0 10px rgb(255, 72, 0);
   
 }
 
