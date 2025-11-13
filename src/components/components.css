@@ -25,7 +25,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 72, 0);
+  background: var(--accent-color);
   border-radius: 10px;
 }
 
@@ -79,7 +79,7 @@
 .menuBarLogo div span{
     font-size: 32px;
     font-weight: 900;
-    color: rgb(255, 72, 0);
+    color: var(--accent-color);
 }
 
 .menuBarLogo div::before{
@@ -87,8 +87,8 @@
     width: 15px;
     height: 15px;
     background: none;
-    border-right: 5px solid rgb(255, 72, 0);
-    border-top: 5px solid rgb(255, 72, 0);
+    border-right: 5px solid var(--accent-color);
+    border-top: 5px solid var(--accent-color);
     position: absolute;
     top: -5px;
     right: -22px;
@@ -99,8 +99,8 @@
     width: 15px;
     height: 15px;
     background: none;
-    border-bottom: 5px solid rgb(255, 72, 0);
-    border-left: 5px solid rgb(255, 72, 0);
+    border-bottom: 5px solid var(--accent-color);
+    border-left: 5px solid var(--accent-color);
     position: absolute;
     bottom: -2px;
     left: -15px;
@@ -148,7 +148,7 @@
 
 .link.active p,
 .link.active svg {
-  color: rgb(255, 72, 0);
+  color: var(--accent-color);
   
 }
 
@@ -295,6 +295,7 @@
 }
 
 .closeBtn:hover{
+    color: #fff;
     background: none;
     border: 1px solid #fff;
 }
@@ -324,9 +325,9 @@
 .wrap.light .menuBar{ background-color: #eef8ff; border-right-color: #c1c1c1; }
 .wrap.light address{ color: #000; }
 .wrap.light .link{ border-bottom: 2px solid #c1c1c1; }
-.wrap.light .link.active p{ color: rgb(255, 72, 0); }
+.wrap.light .link.active p{ color: var(--accent-color); }
 .wrap.light .link p{ color: #000; }
-.wrap.light .link.active svg{ color: rgb(255, 72, 0); }
+.wrap.light .link.active svg{ color: var(--accent-color); }
 .wrap.light .link svg{ color: #000; }
 
 /* light mode menubar edn */
@@ -352,13 +353,13 @@
 /*-------------- light mode aboutPage */
 
 .wrap.light .content .about  .skillsInfo p{ color: #000; }
-.wrap.light .content .about .skillsInfo p:hover{ color: rgb(255, 72, 0); }
+.wrap.light .content .about .skillsInfo p:hover{ color: var(--accent-color); }
 .wrap.light .content .about .skillsInfo p:hover span{ color: #000; }
 .wrap.light .content .about .skillsInfo span{ color: #666; }
 .wrap.light .content .about .skillsInfoMain p { border-bottom-color: #c1c1c1;}
 .wrap.light .content .about .btnView p { color: #000; }
 .wrap.light .content .about .swiper-pagination-bullet { background-color: #000;}
-.wrap.light .content .about .swiper-pagination-bullet-active { background-color: rgb(255, 72, 0);}
+.wrap.light .content .about .swiper-pagination-bullet-active { background-color: var(--accent-color);}
 .wrap.light .content .about .ProgresTitle span { color: #000; }
 .wrap.light .content .about .skillsRepo progress::-webkit-progress-bar { background-color: #c1c1c1;}
 
@@ -368,14 +369,14 @@
 /*-------------- light mode PortfolioPage */
 
 .wrap.light .content .portfolio .projectImg { border-color: #c1c1c1;}
-.wrap.light .content .portfolio .projectImg:hover { border: 3px solid rgb(255, 72, 0);}
+.wrap.light .content .portfolio .projectImg:hover { border: 3px solid var(--accent-color);}
 
 /* light mode PortfolioPage end */
 
 
 /*-------------- light mode ContactPage */
 
-.wrap.light .content .contactPage h3 {color: rgb(255, 72, 0);}
+.wrap.light .content .contactPage h3 {color: var(--accent-color);}
 .wrap.light .content .contactPage .platform:hover {box-shadow: 4px 4px 4px 4px #888;}
 .wrap.light .content .contactPage .platform:active {box-shadow: 1px 1px 1px 1px #666;}
 

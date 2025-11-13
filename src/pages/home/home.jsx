@@ -28,7 +28,7 @@ const HomePage = () => {
                                       style={{
                                         width: "2px",
                                         height: "500px", 
-                                        background: "red",
+                                        background: "var(--accent-color)",
                                         position: "relative",
                                         display: "flex",
                                         justifyContent: "center",
@@ -41,7 +41,7 @@ const HomePage = () => {
                                           alignItems: "center",
                                           justifyContent: "center",
                                           whiteSpace: "nowrap",
-                                          color: "red",
+                                          color: "var(--accent-color)",
                                           width: "120px",
                                           height: "40px",
                                           borderRadius: "50px",
