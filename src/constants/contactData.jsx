@@ -1,3 +1,5 @@
+// my social media 
+
 // socials svg
 import insta from "../assets/instagram.svg";
 import teleg from "../assets/telelgram.svg";

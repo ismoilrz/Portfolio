@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Light / dark holati
+  // Light / dark 
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "light";
   });

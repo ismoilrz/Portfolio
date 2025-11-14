@@ -282,6 +282,17 @@
     height: 35px;
     border-radius: 50px;
     border: none;
+    transition: 0.2s ease-out;
+}
+
+.changeColor button:hover{
+    border: 2px solid #fff;
+    transform: scale(1.2);
+}
+
+.changeColor button:active{
+    border: none;
+    transform: scale(1);
 }
 
 .closeBtn{
@@ -298,10 +309,6 @@
     color: #fff;
     background: none;
     border: 1px solid #fff;
-}
-
-.closeBtn:active{
-    transform: scale(0.9);
 }
 
 .redBtn{ background-color: red; }
@@ -398,5 +405,13 @@
 .wrap.light .content .socialsUrl:active{ box-shadow: none; }
 
 /* light mode contacts component end */
+
+/*------------------ light mode colors component */
+
+.wrap.light .content .changeColor button{border-color: #333;}
+.wrap.light .content .colorss{ background: #fff; border-color: #c1c1c1;}
+.wrap.light .content .colorss p{ color: #000;}
+
+/* light mode colors component end */
 
 /* wrap end */

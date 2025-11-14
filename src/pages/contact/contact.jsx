@@ -9,6 +9,7 @@ const ContactPage = () => {
                         <h3>Have You Any Question ?</h3>
                         <p>I'M AT YOUR SERVICE</p>
                         <div className="contact">
+                            {/* my social media */}
                             {Contact.map((item, index) => (
                                 <a key={index} href={item.link}>
                                     <div className="platform">
@@ -21,6 +22,7 @@ const ContactPage = () => {
                         </div>
                     </div> 
 
+                            {/* massage */}
                     <div className="massage">
                         <h3>SEND MEN AN MASSAGE</h3>
                         <div className="massageInputs">
