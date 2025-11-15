@@ -10,6 +10,10 @@ import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import "./aboutt.css"
 import Contacts from "../../components/contacts";
+// import Models from "../../components/models";
+// import Models2 from "../../components/models2";
+import Models from "../../components/models3D/models";
+import Models2 from "../../components/models3D/models2";
 
 const AboutPage = () => {
      // my dec Info
@@ -28,7 +32,8 @@ const AboutPage = () => {
 
                     {/*about info */}
                     <div className="aboutInfo">
-                        <h3>I'm Ro'zmetov Ismoil and <span className="myName">Fronted Developer</span></h3>
+                        <div className="aboutInfoTxt">
+                         <h3>I'm Ro'zmetov Ismoil and <span className="myName">Fronted Developer</span></h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Voluptate hic dignissimos neque, inventore ipsa asperiores
@@ -41,6 +46,10 @@ const AboutPage = () => {
                             ullam tempore, tempora reiciendis possimus quisquam quibusdam 
                             quae quo ipsam itaque.
                         </p>
+                        </div>
+                        <div className="model2">
+                          <Models2 />
+                        </div>
                     </div>
                     <div className="skills">
                        <div className="skillsInfoDes">
@@ -112,6 +121,9 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <Contacts />
+                    <div className="models">
+                         <Models />
+                    </div>
                 </section>
            </>
 }
