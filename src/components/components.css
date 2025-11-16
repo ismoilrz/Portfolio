@@ -55,6 +55,9 @@
     .content{
         order: 1;
     }
+    ::-webkit-scrollbar {
+        display: none;
+}
 }
 
 /* content end */
@@ -72,17 +75,55 @@
 
 @media (max-width: 430px) {
     .menuBar{
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: auto;
         order: 2;
+        z-index: 100;
     }
 }
 
 
-/* menubr logo start */
+/* menubar logo start */
+
+.change{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 430px) {
+    .change{
+        justify-content: space-between;
+    }
+}
+
+.changeLogo{
+    display: none;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+@media (max-width: 430px) {
+    .changeLogo{
+        display: block;
+        margin-top: -30px;
+    }
+}
 
 .menuBarLogo{
     display: flex;
     justify-content: center;
     margin-top: 70px;
+}
+
+@media (max-width: 430px) {
+    .menuBar .menuBarLogo{
+        display: none;
+        margin: 0;
+       
+    }
 }
 
 .menuBarLogo div{
@@ -133,8 +174,18 @@
     align-items: center;
     flex-direction: column;
     margin-top: 150px;
-    gap: 15px;
-    
+    gap: 15px; 
+}
+
+@media (max-width: 430px) {
+    .navbar{
+        margin: 0;
+        padding-block: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .navbar p{
@@ -142,6 +193,12 @@
     font-weight: 900;
     color: #fff;
     transition: 0.5s;
+}
+
+@media (max-width: 430px) {
+    .navbar p{
+        font-size: 15px;
+    }
 }
 
 .link{
@@ -155,12 +212,34 @@
     transition: 0.3s ease-out;
 }
 
+@media (max-width: 430px) {
+    .link{
+        width: 80px;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 0;
+    }
+}
+
 .link:hover{
     transform: translateX(20px);
 }
 
+@media (max-width: 430px) {
+    .link:hover{
+        transform: none;
+    }
+}
+
 .link.active{
      transform: translateX(50px);
+}
+
+@media (max-width: 430px) {
+    .link.active{
+        transform: none;
+    }
 }
 
 .link.active p,
@@ -244,7 +323,7 @@
 
 @media (max-width: 430px) {
     .socials{
-        padding-block: 50px;
+        padding-block: 50px 100px;
     }
 }
 

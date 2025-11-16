@@ -7,6 +7,7 @@ import setting from "../assets/setting.svg";
 import { useTheme } from "../context/themeContext";
 import { useState } from "react";
 import Colors from "./colors";
+import Logo from "./logo";
 
 const FonSetting = () => {
     const { theme, toggleTheme } = useTheme();
@@ -21,7 +22,11 @@ const FonSetting = () => {
     }
 
     return <>
-                 <div className="colors">
+            <section className="change">
+                <div className="changeLogo">
+                    <Logo />
+                </div>
+                <div className="colors">
                     
                     {/* dark/light mode */}
                     <button className="sun" onClick={toggleTheme}>
@@ -33,6 +38,8 @@ const FonSetting = () => {
                         <img src={setting} alt="" />
                     </button>
                 </div> 
+            </section>
+                 
 
                 {open && <Colors close={close} />}
            </>

@@ -1,15 +1,14 @@
 import { Link, useLocation } from "react-router-dom"
 import { MenuData } from "../constants/menuData"
 import "./components.css"
+import Logo from "./logo";
 
 const MenuBar = () => {
     const location = useLocation();
 
     return <>
                 <section className="menuBar">
-                    <div className="menuBarLogo">   {/*logo */}
-                        <div> <address>BAK<span>III</span></address></div>
-                    </div>
+                    <Logo />     {/*logo */}
 
                     <div className="navbar">   {/*navbar */}
                         {MenuData.map((item) => (
