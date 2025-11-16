@@ -13,9 +13,7 @@ const AllComponents = () => {
 
     return <>
                 <div className={`wrap ${theme}`}>
-                    <div className="components">
                         <MenuBar />         {/*menubar */}
-                    </div>
                    
                    {/* content */}
 
@@ -33,7 +31,7 @@ const AllComponents = () => {
                         </Suspense>
 
                         {/* content end */}
-                    </section>
+                    </section>  
                 </div>
            </>
 }

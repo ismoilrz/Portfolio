@@ -13,9 +13,21 @@
     gap: 90px;
 }
 
+@media (max-width: 430px) {
+    .info{
+        flex-direction: column;
+    }
+}
+
 .IamInfo{
     margin-top: 100px;
     margin-left: 30px;
+}
+
+@media (max-width: 430px) {
+    .IamInfo{
+        margin-top: 20px;
+    }
 }
 
 .IamInfo span{
@@ -29,6 +41,12 @@
     font-weight: 900;
     color: var(--accent-color);
     animation: Rgb 30s linear infinite;
+}
+
+@media (max-width: 430px) {
+    .IamInfo span{
+        font-size: 18px;
+    }
 }
 
 @keyframes Rgb{
@@ -47,6 +65,13 @@
     margin-top: 20px;
 }
 
+@media (max-width: 430px) {
+    .IamInfo h2{
+        font-size: 22px;
+        font-weight: 800;
+    }
+}
+
 .IamInfo p{
     font-family: var(--textFont);
     line-height: 22px;
@@ -55,6 +80,12 @@
     max-width: 600px;
     color: #a2a2a2;
     margin-top: 20px;
+}
+
+@media (max-width: 430px) {
+    .IamInfo p{
+        max-width: 350px;
+    }
 }
 
 .IamInfo button{
@@ -70,6 +101,13 @@
     font-family: var(--textFont);
     font-weight: 500;
     transition: 0.1s ease-out;
+}
+
+@media (max-width: 430px) {
+    .IamInfo button{
+        margin-top: 50px;
+       
+    }
 }
 
 .IamInfo button:hover{
@@ -93,6 +131,17 @@
     left: -80px;
 
     animation: To 10s linear infinite;
+}
+
+@media (max-width: 430px) {
+    .dis::before{
+        width: 60px;
+        height: 60px;
+        top: -40px;
+        left: -40px;
+        border-left: 8px solid var(--accent-color);
+        border-top: 8px solid var(--accent-color);
+    }
 }
 
 @keyframes To {
@@ -128,6 +177,17 @@
 } 
 
 
+@media (max-width: 430px) {
+    .dis::after{
+        width: 60px;
+        height: 60px;
+        bottom: -40px;
+        right: -40px;
+        border-right: 8px solid var(--accent-color);
+        border-bottom: 8px solid var(--accent-color);
+    }
+}
+
 
 .dis{
     position: relative;
@@ -139,6 +199,15 @@
     border: 2px solid var(--accent-color);
 
     animation: dis 6s linear infinite;
+}
+
+
+@media (max-width: 430px) {
+    .dis{
+        width: 70%;
+        margin-inline: auto;
+        margin-top: 30px;
+    }
 }
 
 @keyframes dis {
