@@ -443,6 +443,6 @@ progress::-webkit-progress-value {
 
 @media (max-width:430px) {
     .models{
-        margin-block: -20px 50px;
+        display: none;
     }
 }
