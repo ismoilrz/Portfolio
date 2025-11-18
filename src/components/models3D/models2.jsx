@@ -40,7 +40,6 @@ function Models2() {
       const center = box.getCenter(new THREE.Vector3());
       const minY = box.min.y;
 
-      // Modelni markazga va yerga moslash
       model.position.set(
         model.position.x - center.x,
         -minY,
@@ -49,7 +48,6 @@ function Models2() {
 
       scene.add(model);
 
-      // Kamera yaqinlashuvi
       const maxDim = Math.max(size.x, size.y, size.z);
       const fov = camera.fov * (Math.PI / 180);
       let cameraZ = Math.abs(maxDim / 1 / Math.tan(fov / 2));

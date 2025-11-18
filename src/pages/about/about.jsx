@@ -68,7 +68,8 @@ const AboutPage = () => {
                         </div>
                         {/*about btns */}
                             <div className="skillsBtns">
-                               <Swiper
+                              <div className="slideBtn">
+                                    <Swiper
                                    direction="vertical"
                                    slidesPerView={1}
                                    spaceBetween={30}
@@ -92,6 +93,7 @@ const AboutPage = () => {
                               <div className="btnView">
                                    <p>CV 2</p>
                                    <p>⇓</p>
+                              </div>
                               </div>
 
                              <div className="menuBtns">
