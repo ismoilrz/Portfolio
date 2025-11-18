@@ -89,7 +89,7 @@
 
 @media(max-width: 430px){
     .model2{
-        margin-left: -65px;
+        display: none;
     }
 }
 
