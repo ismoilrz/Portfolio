@@ -78,10 +78,10 @@ const ContactPage = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
+      </div>
         <button className="submit" onClick={handleSend}>
           Submit
         </button>
-      </div>
     </section>
   );
 };
