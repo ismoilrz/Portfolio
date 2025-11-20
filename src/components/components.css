@@ -5,7 +5,14 @@
 
 :root {
   --DesFond: 'Saira';
-  --textFont: 'Roboto'
+  --textFont: 'Roboto';
+
+  --fff: #fff;
+  --000: #000;
+  --444: #444;
+  --666: #666;
+  --46: #464646;
+  --c1: #c1c1c1;
 }
 
 /* root end */
@@ -20,7 +27,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #444;
+  background: var(--444);
  
 }
 
@@ -69,7 +76,7 @@
     width: 350px;
     height: 100vh;
     background-color: #1f1f1f;
-    border-right: 3px solid #464646;
+    border-right: 3px solid var(--46);
     order: 1;
 }
 
@@ -129,9 +136,9 @@
 .menuBarLogo div{
     position: relative;
     font-family: var(--DesFond);
+    color: var(--fff);
     font-size: 30px;
     font-weight: 800;
-    color: #fff;
 }
 
 .menuBarLogo div span{
@@ -190,8 +197,8 @@
 
 .navbar p{
     font-family: var(--textFont);
+    color: var(--fff);
     font-weight: 900;
-    color: #fff;
     transition: 0.5s;
 }
 
@@ -208,7 +215,7 @@
     gap: 10px;
     padding-left: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #464646;
+    border-bottom: 2px solid var(--46);
     transition: 0.3s ease-out;
 }
 
@@ -251,7 +258,7 @@
 .link svg{
     transition: 0.5s;
     background: none;
-    color: #fff;
+    color: var(--fff);
 }
 
 /* navbar end */
@@ -276,14 +283,14 @@
     width: 40px;
     height: 40px;
     background-color: #2a2a2a;
-    box-shadow: 3px 3px 3px #666;
+    box-shadow: 3px 3px 3px var(--666);
     border: none;
     border-radius: 100px;
     transition: 0.2s;
 }
 
 .sun:hover{
-    background-color: #444;
+    background-color: var(--444);
 }
 
 .sun:active{
@@ -291,7 +298,7 @@
 }
 
 .setting:hover{
-    background-color: #444;
+    background-color: var(--444);
 }
 
 .setting:active{
@@ -305,7 +312,7 @@
     width: 40px;
     height: 40px;
     background-color: #2a2a2a;
-    box-shadow: 3px 3px 3px #666;
+    box-shadow: 3px 3px 3px var(--666);
     border: none;
     border-radius: 100px;
     transition: 0.2s;
@@ -334,7 +341,7 @@
     width: 50px;
     height: 50px;
     background-color: #3c3c3c;
-    box-shadow: 3px 3px 3px #666;
+    box-shadow: 3px 3px 3px var(--666);
     border-radius: 15px;
 
     transition: 0.2s ease-out;
@@ -352,7 +359,7 @@
     width: 270px;
     height: 110px;
     background: #282828;
-    border: 3px solid #464646;
+    border: 3px solid var(--46);
     border-radius: 5px;
     position: absolute;
     top: 70px;
@@ -368,7 +375,7 @@
     font-family: var(--textFont);
     font-size: 17px;
     font-weight: 800;
-    color: #fff;
+    color: var(--fff);
 }
 
 .changeColor {
@@ -388,7 +395,7 @@
 }
 
 .changeColor button:hover{
-    border: 2px solid #fff;
+    border: 2px solid var(--fff);
     transform: scale(1.2);
 }
 
@@ -399,18 +406,17 @@
 
 .closeBtn{
     background-color: rgb(215, 17, 17);
-    /* border: 2px solid transparent; */
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
+    color: var(--fff);
 
     transition: 0.2s ease-out;
 }
 
 .closeBtn:hover{
-    color: #fff;
+    border: 1px solid var(--fff);
+    color: var(--fff);
     background: none;
-    border: 1px solid #fff;
 }
 
 .redBtn{ background-color: red; }
@@ -431,53 +437,53 @@
 
 /*--------------- light mode Menubar */
 
-.wrap.light .menuBar{ background-color: #eef8ff; border-right-color: #c1c1c1; }
-.wrap.light address{ color: #000; }
-.wrap.light .link{ border-bottom: 2px solid #c1c1c1; }
-.wrap.light .link.active p{ color: var(--accent-color); }
-.wrap.light .link p{ color: #000; }
+.wrap.light .menuBar{ background-color: #eef8ff; border-right-color: var(--c1); }
 .wrap.light .link.active svg{ color: var(--accent-color); }
-.wrap.light .link svg{ color: #000; }
+.wrap.light .link.active p{ color: var(--accent-color); }
+.wrap.light .link{ border-bottom: 2px solid var(--c1); }
+.wrap.light .link svg{ color: var(--000); }
+.wrap.light address{ color: var(--000); }
+.wrap.light .link p{ color: var(--000); }
 
 /* light mode menubar edn */
 
 
 /*--------------- light mode content */
 
-.wrap.light .content::-webkit-scrollbar-track {background-color: #999;}
+.wrap.light .content p{ color: var(--666); }
+.wrap.light .content h1{ color: var(--000); }
+.wrap.light .content h2{ color: var(--000); }
+.wrap.light .content h3{ color: var(--000); }
+.wrap.light .content h5{ color: var(--000); }
 .wrap.light .content{ background-color: #e9efff; }
-.wrap.light .content h1{ color: #000; }
-.wrap.light .content h2{ color: #000; }
-.wrap.light .content h3{ color: #000; }
-.wrap.light .content h5{ color: #000; }
-.wrap.light .content p{ color: #666; }
-.wrap.light .content input{ background-color: #eef8ff; border-color: #c1c1c1; color: #000;}
-.wrap.light .content input:focus{ background-color: #fff;}
-.wrap.light .content button:hover { color: #000; }
-.wrap.light .content textarea{  background-color: #eef8ff; border-color: #c1c1c1; color: #000; } 
+.wrap.light .content button:hover { color: var(--000); }
+.wrap.light .content input:focus{ background-color: var(--fff);}
+.wrap.light .content::-webkit-scrollbar-track {background-color: #999;}
+.wrap.light .content input{ background-color: #eef8ff; border-color: var(--c1); color: var(--000);}
+.wrap.light .content textarea{  background-color: #eef8ff; border-color: var(--c1); color: var(--000); } 
 
 /* light mode content end */
 
 
 /*-------------- light mode aboutPage */
 
-.wrap.light .content .about  .skillsInfo p{ color: #000; }
+.wrap.light .content .about .btnView p { color: var(--000); }
+.wrap.light .content .about  .skillsInfo p{ color: var(--000); }
+.wrap.light .content .about .skillsInfo span{ color: var(--666); }
+.wrap.light .content .about .ProgresTitle span { color: var(--000); }
+.wrap.light .content .about .skillsInfo p:hover span{ color: var(--000); }
 .wrap.light .content .about .skillsInfo p:hover{ color: var(--accent-color); }
-.wrap.light .content .about .skillsInfo p:hover span{ color: #000; }
-.wrap.light .content .about .skillsInfo span{ color: #666; }
-.wrap.light .content .about .skillsInfoMain p { border-bottom-color: #c1c1c1;}
-.wrap.light .content .about .btnView p { color: #000; }
-.wrap.light .content .about .swiper-pagination-bullet { background-color: #000;}
+.wrap.light .content .about .skillsInfoMain p { border-bottom-color: var(--c1);}
+.wrap.light .content .about .swiper-pagination-bullet { background-color: var(--000);}
+.wrap.light .content .about .skillsRepo progress::-webkit-progress-bar { background-color: var(--c1);}
 .wrap.light .content .about .swiper-pagination-bullet-active { background-color: var(--accent-color);}
-.wrap.light .content .about .ProgresTitle span { color: #000; }
-.wrap.light .content .about .skillsRepo progress::-webkit-progress-bar { background-color: #c1c1c1;}
 
 /* light mode AboutPage end */
 
 
 /*-------------- light mode PortfolioPage */
 
-.wrap.light .content .portfolio .projectImg { border-color: #c1c1c1;}
+.wrap.light .content .portfolio .projectImg { border-color: var(--c1);}
 .wrap.light .content .portfolio .projectImg:hover { border: 3px solid var(--accent-color);}
 
 /* light mode PortfolioPage end */
@@ -487,7 +493,7 @@
 
 .wrap.light .content .contactPage h3 {color: var(--accent-color);}
 .wrap.light .content .contactPage .platform:hover {box-shadow: 4px 4px 4px 4px #888;}
-.wrap.light .content .contactPage .platform:active {box-shadow: 1px 1px 1px 1px #666;}
+.wrap.light .content .contactPage .platform:active {box-shadow: 1px 1px 1px 1px var(--666);}
 
 /* light mode ContactPage end */
 
@@ -495,24 +501,24 @@
 /*-------------- light mode Fon component */
 
 .wrap.light .content .colors button { background-color: #777; box-shadow: 3px 3px 3px #222;}
-.wrap.light .content .colors button:hover { background-color: #999; }
 .wrap.light .content .colors button:active { background-color: #777; box-shadow: none;}
+.wrap.light .content .colors button:hover { background-color: #999; }
 
 /* light mode Fon component end */
 
 
 /*------------------ light mode Contacts component */
 
-.wrap.light .content .socialsUrl { background-color: #ffffff; box-shadow: 2px 2px 2px #222;}
+.wrap.light .content .socialsUrl { background-color: var(--fff); box-shadow: 2px 2px 2px #222;}
 .wrap.light .content .socialsUrl:active{ box-shadow: none; }
 
 /* light mode contacts component end */
 
 /*------------------ light mode colors component */
 
+.wrap.light .content .colorss{ background: var(--fff); border-color: var(--c1);}
 .wrap.light .content .changeColor button{border-color: #333;}
-.wrap.light .content .colorss{ background: #fff; border-color: #c1c1c1;}
-.wrap.light .content .colorss p{ color: #000;}
+.wrap.light .content .colorss p{ color: var(--000);}
 
 /* light mode colors component end */
 

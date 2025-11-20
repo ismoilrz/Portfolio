@@ -1,6 +1,13 @@
 :root {
   --DesFond: 'Saira';
-  --textFont: 'Roboto'
+  --textFont: 'Roboto';
+
+  --fff: #fff;
+  --000: #000;
+  --444: #444;
+  --666: #666;
+  --46: #464646;
+  --c1: #c1c1c1;
 }
 
 * {
@@ -33,13 +40,13 @@
 .IamInfo span{
     height: 110%;
     padding-inline: 10px;
-    border: 1px solid #fff;
     border-radius: 50px;
-    background-color: #000;
+    border: 1px solid var(--fff);
+    background-color: var(--000);
     font-family: var(--DesFond);
+    color: var(--accent-color);
     font-size: 25px;
     font-weight: 900;
-    color: var(--accent-color);
     animation: Rgb 30s linear infinite;
 }
 
@@ -53,15 +60,15 @@
 @keyframes Rgb{
     0%{}
     25%{background-color: #2a2a2a; border-color: var(--accent-color);}
-    50%{background-color: var(--accent-color); color: #f5f5f5; border-color: #000000;}
-    75%{background-color: #f5f5f5; color: #000000; border-color: var(--accent-color);}
-    100%{background-color: #000; color: var(--accent-color);}
+    50%{background-color: var(--accent-color); color: #f5f5f5; border-color: var(--000);}
+    75%{background-color: #f5f5f5; color: var(--000); border-color: var(--accent-color);}
+    100%{background-color: var(--000); color: var(--accent-color);}
 }
 
 .IamInfo h2{
     font-family: var(--textFont);
+    color: var(--fff);
     font-size: 35px;
-    color: #fff;
     font-weight: 600;
     margin-top: 20px;
 }
@@ -98,9 +105,9 @@
     border: 2px solid transparent;
     background-color: var(--accent-color);
 
-    color: #fff;
-    font-size: 16px;
     font-family: var(--textFont);
+    color: var(--fff);
+    font-size: 16px;
     font-weight: 500;
     transition: 0.1s ease-out;
 }

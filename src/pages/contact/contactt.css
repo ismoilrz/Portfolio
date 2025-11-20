@@ -1,6 +1,13 @@
 :root {
   --DesFond: 'Saira';
-  --textFont: 'Roboto'
+  --textFont: 'Roboto';
+
+  --fff: #fff;
+  --000: #000;
+  --444: #444;
+  --666: #666;
+  --46: #464646;
+  --c1: #c1c1c1;
 }
 
 /*------------ contact page title */
@@ -8,7 +15,7 @@
 .contactPage h1{
     position: relative;
     font-family: var(--DesFond);
-    color: #fff;
+    color: var(--fff);
     font-size: 35px;
     font-weight: 700;
     margin-left: 30px;
@@ -52,16 +59,16 @@
 
 .contactMe h3{
     font-family: var(--DesFond);
+    color: var(--accent-color);
     font-size: 26px;
     font-weight: 800;
-    color: var(--accent-color);
     padding-block: 60px 10px;
 }
 
 .contactMe p{
     font-family: var(--DesFond);
+    color: var(--fff);
     font-weight: 800;
-    color: #fff;
 }
 
 /* social title */
@@ -103,7 +110,7 @@
 .platform h5{
     font-family: var(--DesFond);
     font-size: 18px;
-    color: #fff;
+    color: var(--fff);
     padding-block: 8px;
 }
 
@@ -122,9 +129,9 @@
 
 .platform p{
     font-family: var(--textFont);
+    color: var(--c1);
     font-size: 15px;
     font-weight: 500;
-    color: #c1c1c1;
 }
 
 @media (max-width:430px) {
@@ -135,11 +142,11 @@
 
 .platform:hover{
     border-bottom: 10px solid var(--accent-color);
-    box-shadow: 4px 4px 4px 4px #000000;
+    box-shadow: 4px 4px 4px 4px var(--000);
 }
 
 .platform:active{
-    box-shadow: 1px 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px var(--000);
     border-bottom: 3px solid var(--accent-color);
 }
 
@@ -152,9 +159,9 @@
 
 .massage h3{
     font-family: var(--DesFond);
+    color: var(--accent-color);
     font-size: 26px;
     font-weight: 900;
-    color: var(--accent-color);
     margin-top: 40px;
 }
 
@@ -201,8 +208,8 @@
     resize: none;
     overflow: auto;
    
-    color: #FFF;
     font-family: var(--textFont);
+    color: var(--fff);
     font-size: 16px;
     font-weight: 600;
 
@@ -234,7 +241,7 @@
     background: #1f1f1f;
     padding-left: 20px;
 
-    color: #FFF;
+    color: var(--fff);
     font-family: var(--textFont);
     font-size: 16px;
     font-weight: 600;
@@ -272,9 +279,9 @@
     border: 2px solid var(--accent-color);
 
     font-family: var(--textFont);
+    color: var(--fff);
     font-size: 16px;
     font-weight: 900;
-    color: #fff;
 
     transition: 0.1s ease-out;
 }
