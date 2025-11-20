@@ -259,6 +259,7 @@ progress::-webkit-progress-value {
 
 @media(max-width:430px) {
     .skillsBtns{
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 15px;
@@ -276,6 +277,7 @@ progress::-webkit-progress-value {
 @media (max-width:430px) {
     .slideBtn{
         width: 100%;
+        /* justify-content: center; */
     }
 }
 
@@ -297,9 +299,10 @@ progress::-webkit-progress-value {
 
 @media(max-width:430px){
     .cvBtn{
-        width: 350px;
+        width: 100%;
         height: 55px;
         font-size: 18px;
+        margin: 0;
     }
 }
 
@@ -314,7 +317,12 @@ progress::-webkit-progress-value {
 /*--------- swiper */
 .swiper-pagination{
     margin-right: -7px;
-   
+}
+
+@media (max-width:430px) {
+    .swiper-pagination{
+        margin: 0;
+    }
 }
 
 .swiper-pagination-bullet{
@@ -336,10 +344,10 @@ progress::-webkit-progress-value {
 
 @media(max-width:430px) {
     .swiper{
-        width: 370px;
+        width: 88%;
         height: 55px;
 
-        /* margin-left: 10px; */
+        margin-left: 30px;
     }
 }
 
@@ -350,6 +358,14 @@ progress::-webkit-progress-value {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width:430px) {
+    .swiper-slide{
+        width: 90%;
+        margin: 0;
+        display: block;
+    }
 }
 
 /* swiper end */
@@ -367,8 +383,11 @@ progress::-webkit-progress-value {
 
 @media (max-width:430px) {
     .menuBtns{
-        margin-left: -10px;
+        width: 100%;
+        margin: 0;
         gap: 10px;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -390,9 +409,9 @@ progress::-webkit-progress-value {
 
 @media (max-width:430px) {
     .pageBtn{
-       width: 170px;
+       width: 80%;
        height: 55px;
-
+       margin-left: 30px;
        font-size: 18px;
     }
 }
