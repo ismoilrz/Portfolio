@@ -105,21 +105,25 @@ const AboutPage = () => {
                        {/*my progress */}
                         <div className="skillsRepo">
                                <div className="ProgresTitle">
-                                    <span>HTML</span> <span>95%</span>
+                                    <span>HTML</span> 
                                </div>
                                     <progress value="95" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>CSS</span> <span>80%</span>
+                                    <span>CSS</span> 
                                </div>
-                                    <progress value="80" max="100"></progress>
+                                    <progress value="90" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>JavaScript</span><span>60%</span>
+                                    <span>JavaScript</span>
+                               </div>
+                                    <progress value="70" max="100"></progress>
+                               <div className="ProgresTitle">
+                                    <span>React</span>
                                </div>
                                     <progress value="60" max="100"></progress>
                                <div className="ProgresTitle">
-                                    <span>React</span><span>45%</span>
+                                    <span>TypeScript</span>
                                </div>
-                                    <progress value="45" max="100"></progress>
+                                    <progress value="30" max="100"></progress>
                         </div>
                     </div>
                     <Contacts />
